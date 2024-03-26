@@ -45,22 +45,7 @@ public class EmployeeService {
         }
     }
 
-    /*
-     public Employee updateEmployee(Long employeeId, Employee employeeDetails) {
-        Optional<Employee> optionalEmployee = employeeRepository.findById(employeeId);
 
-        if (optionalEmployee.isPresent()) {
-            Employee employee = optionalEmployee.get();
-            employee.setName(employeeDetails.getName());
-            employee.setEmail(employeeDetails.getEmail());
-            //need to update address somehow
-
-            return employeeRepository.save(employee);
-        } else {
-            throw new RuntimeException("Employee with id: " + employeeId + " not found.");
-        }
-    }
-    */
 
     public Employee updateEmployee(Long employeeId, EmployeeDTO employeeDTO) {
         Optional<Employee> optionalEmployee = employeeRepository.findById(employeeId);
