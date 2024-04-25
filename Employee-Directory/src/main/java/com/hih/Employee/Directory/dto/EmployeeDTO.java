@@ -45,7 +45,6 @@ public class EmployeeDTO {
         return addresses;
     }
 
-    //need to get addresses from addressesDto and not set them here
     public void setAddresses(List<AddressDTO> addresses) {
         this.addresses = addresses;
     }
